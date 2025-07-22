@@ -1,0 +1,2413 @@
+[  +20 ms] executing: sysctl hw.optional.arm64
+[   +4 ms] Exit code 0 from: sysctl hw.optional.arm64
+[        ] hw.optional.arm64: 1
+[  +49 ms] executing: sysctl hw.optional.arm64
+[   +5 ms] Exit code 0 from: sysctl hw.optional.arm64
+[        ] hw.optional.arm64: 1
+[        ] executing: /usr/bin/arch -arm64e xcrun xcodebuild -version
+[ +172 ms] Exit code 0 from: /usr/bin/arch -arm64e xcrun xcodebuild -version
+[        ] Xcode 16.4
+           Build version 16F6
+[   +1 ms] executing: /usr/bin/arch -arm64e xcrun xcdevice list --timeout 5
+[   +2 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +20 ms] executing: /Users/celia.perez/Library/Android/sdk/platform-tools/adb devices -l
+[        ] executing: /usr/bin/arch -arm64e xcrun xcdevice list --timeout 2
+[        ] executing: /usr/bin/arch -arm64e xcrun simctl list devices booted
+[ +110 ms] /usr/bin/arch -arm64e xcrun simctl list devices booted iOS --json
+[        ] executing: /usr/bin/arch -arm64e xcrun simctl list devices booted iOS --json
+[  +20 ms] List of devices attached
+           emulator-5554          device product:sdk_gphone64_arm64 model:sdk_gphone64_arm64 device:emu64a transport_id:1
+[  +95 ms] {
+             "devices" : {
+               "com.apple.CoreSimulator.SimRuntime.iOS-18-5" : [
+
+               ]
+             }
+           }
+[+2601 ms] [
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone17,3",
+               "identifier" : "50C2A670-D582-4E17-B18B-05BEF236D3A6",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.iphone-16-1",
+               "modelName" : "iPhone 16",
+               "name" : "iPhone 16",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone17,2",
+               "identifier" : "EC43A201-0799-455D-9148-0127A3ED0999",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.iphone-16-pro-max-1",
+               "modelName" : "iPhone 16 Pro Max",
+               "name" : "iPhone 16 Pro Max",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad16,4",
+               "identifier" : "5BBD0177-1496-4B9D-846C-F3B3D09A5ACD",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.ipad-pro-m4-1",
+               "modelName" : "iPad Pro 11-inch (M4)",
+               "name" : "iPad Pro 11-inch (M4)",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad16,6",
+               "identifier" : "2524D25C-D0E1-422B-B2C6-918BFA3BAC9A",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.ipad-pro-m4-13-1",
+               "modelName" : "iPad Pro 13-inch (M4)",
+               "name" : "iPad Pro 13-inch (M4)",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad15,7",
+               "identifier" : "76344EF6-D901-446B-BA3F-9E0EB3F41E70",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.ipad-a16-1",
+               "modelName" : "iPad (A16)",
+               "name" : "iPad (A16)",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone17,5",
+               "identifier" : "B69BECDF-A4D0-4C68-A74C-6DE0EA407699",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.iphone-16-e-1",
+               "modelName" : "iPhone 16e",
+               "name" : "iPhone 16e",
+               "ignored" : false
+             },
+             {
+               "ignored" : false,
+               "modelCode" : "MacBookAir10,1",
+               "simulator" : false,
+               "modelName" : "MacBook Air",
+               "operatingSystemVersion" : "15.5 (24F74)",
+               "identifier" : "00008103-0014615410C0291E",
+               "platform" : "com.apple.platform.macosx",
+               "architecture" : "arm64e",
+               "interface" : "usb",
+               "available" : true,
+               "name" : "My Mac",
+               "modelUTI" : "com.apple.macbookair-late-2020"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone17,4",
+               "identifier" : "5A2EB93B-543E-43CE-A0FD-E4C531583D44",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.iphone-16-plus-1",
+               "modelName" : "iPhone 16 Plus",
+               "name" : "iPhone 16 Plus",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad15,5",
+               "identifier" : "5B4996ED-A7A4-48EC-9338-474647DD48C4",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.ipad-air-m3-13-1",
+               "modelName" : "iPad Air 13-inch (M3)",
+               "name" : "iPad Air 13-inch (M3)",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad16,2",
+               "identifier" : "A2F5940B-5DAF-432A-94A7-39DC065C152F",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.ipad-mini-a17-1",
+               "modelName" : "iPad mini (A17 Pro)",
+               "name" : "iPad mini (A17 Pro)",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone17,1",
+               "identifier" : "FED69ADD-B73E-4119-8F6A-9D71200C8F17",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.iphone-16-pro-1",
+               "modelName" : "iPhone 16 Pro",
+               "name" : "iPhone 16 Pro",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad15,3",
+               "identifier" : "7E411D2A-5AE3-4381-9440-BE90339DEF1C",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.ipad-air-m3-1",
+               "modelName" : "iPad Air 11-inch (M3)",
+               "name" : "iPad Air 11-inch (M3)",
+               "ignored" : false
+             }
+           ]
+[   +2 ms] executing: /usr/bin/arch -arm64e xcrun devicectl --version
+[  +70 ms] executing: /usr/bin/arch -arm64e xcrun devicectl list devices --timeout 5 --json-output /var/folders/sx/t8h2nxr127q6bx32dm4m2xtm0000gq/T/flutter_tools.NYo5qh/core_devices.TE6KPG/core_device_list.json
+[  +73 ms] No devices found.
+[        ] {
+             "info" : {
+               "arguments" : [
+                 "devicectl",
+                 "list",
+                 "devices",
+                 "--timeout",
+                 "5",
+                 "--json-output",
+                 "/var/folders/sx/t8h2nxr127q6bx32dm4m2xtm0000gq/T/flutter_tools.NYo5qh/core_devices.TE6KPG/core_device_list.json"
+               ],
+               "commandType" : "devicectl.list.devices",
+               "environment" : {
+                 "TERM" : "xterm-256color"
+               },
+               "jsonVersion" : 2,
+               "outcome" : "success",
+               "version" : "443.24"
+             },
+             "result" : {
+               "devices" : [
+
+               ]
+             }
+           }
+
+[   +2 ms] /Users/celia.perez/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell getprop
+[  +54 ms] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +69 ms] Skipping pub get: version match.
+[   +4 ms] executing: [/Users/celia.perez/Documents/Flutter/flutter_projects/emma-flutter-example/emma_flutter_example/] /Users/celia.perez/Documents/Flutter/flutter/bin/cache/dart-sdk/bin/dart pub --suppress-analytics deps --json
+[ +146 ms] {
+             "root": "emma_flutter_example",
+             "packages": [
+               {
+                 "name": "emma_flutter_example",
+                 "version": "1.0.0+1",
+                 "kind": "root",
+                 "source": "root",
+                 "dependencies": [
+                   "flutter",
+                   "emma_flutter_sdk",
+                   "cupertino_icons",
+                   "flutter_test",
+                   "flutter_lints"
+                 ],
+                 "directDependencies": [
+                   "flutter",
+                   "emma_flutter_sdk",
+                   "cupertino_icons"
+                 ],
+                 "devDependencies": [
+                   "flutter_test",
+                   "flutter_lints"
+                 ]
+               },
+               {
+                 "name": "flutter_lints",
+                 "version": "5.0.0",
+                 "kind": "dev",
+                 "source": "hosted",
+                 "dependencies": [
+                   "lints"
+                 ],
+                 "directDependencies": [
+                   "lints"
+                 ]
+               },
+               {
+                 "name": "lints",
+                 "version": "5.1.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "flutter_test",
+                 "version": "0.0.0",
+                 "kind": "dev",
+                 "source": "sdk",
+                 "dependencies": [
+                   "flutter",
+                   "test_api",
+                   "matcher",
+                   "path",
+                   "fake_async",
+                   "clock",
+                   "stack_trace",
+                   "vector_math",
+                   "leak_tracker_flutter_testing",
+                   "async",
+                   "boolean_selector",
+                   "characters",
+                   "collection",
+                   "leak_tracker",
+                   "leak_tracker_testing",
+                   "material_color_utilities",
+                   "meta",
+                   "source_span",
+                   "stream_channel",
+                   "string_scanner",
+                   "term_glyph",
+                   "vm_service"
+                 ],
+                 "directDependencies": [
+                   "flutter",
+                   "test_api",
+                   "matcher",
+                   "path",
+                   "fake_async",
+                   "clock",
+                   "stack_trace",
+                   "vector_math",
+                   "leak_tracker_flutter_testing",
+                   "async",
+                   "boolean_selector",
+                   "characters",
+                   "collection",
+                   "leak_tracker",
+                   "leak_tracker_testing",
+                   "material_color_utilities",
+                   "meta",
+                   "source_span",
+                   "stream_channel",
+                   "string_scanner",
+                   "term_glyph",
+                   "vm_service"
+                 ]
+               },
+               {
+                 "name": "vm_service",
+                 "version": "15.0.0",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "term_glyph",
+                 "version": "1.2.2",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "string_scanner",
+                 "version": "1.4.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "source_span"
+                 ],
+                 "directDependencies": [
+                   "source_span"
+                 ]
+               },
+               {
+                 "name": "source_span",
+                 "version": "1.10.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "collection",
+                   "path",
+                   "term_glyph"
+                 ],
+                 "directDependencies": [
+                   "collection",
+                   "path",
+                   "term_glyph"
+                 ]
+               },
+               {
+                 "name": "path",
+                 "version": "1.9.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "collection",
+                 "version": "1.19.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "stream_channel",
+                 "version": "2.1.4",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "async"
+                 ],
+                 "directDependencies": [
+                   "async"
+                 ]
+               },
+               {
+                 "name": "async",
+                 "version": "2.13.0",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "collection",
+                   "meta"
+                 ],
+                 "directDependencies": [
+                   "collection",
+                   "meta"
+                 ]
+               },
+               {
+                 "name": "meta",
+                 "version": "1.16.0",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "material_color_utilities",
+                 "version": "0.11.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "collection"
+                 ],
+                 "directDependencies": [
+                   "collection"
+                 ]
+               },
+               {
+                 "name": "leak_tracker_testing",
+                 "version": "3.0.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "leak_tracker",
+                   "matcher",
+                   "meta"
+                 ],
+                 "directDependencies": [
+                   "leak_tracker",
+                   "matcher",
+                   "meta"
+                 ]
+               },
+               {
+                 "name": "matcher",
+                 "version": "0.12.17",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "async",
+                   "meta",
+                   "stack_trace",
+                   "term_glyph",
+                   "test_api"
+                 ],
+                 "directDependencies": [
+                   "async",
+                   "meta",
+                   "stack_trace",
+                   "term_glyph",
+                   "test_api"
+                 ]
+               },
+               {
+                 "name": "test_api",
+                 "version": "0.7.4",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "async",
+                   "boolean_selector",
+                   "collection",
+                   "meta",
+                   "source_span",
+                   "stack_trace",
+                   "stream_channel",
+                   "string_scanner",
+                   "term_glyph"
+                 ],
+                 "directDependencies": [
+                   "async",
+                   "boolean_selector",
+                   "collection",
+                   "meta",
+                   "source_span",
+                   "stack_trace",
+                   "stream_channel",
+                   "string_scanner",
+                   "term_glyph"
+                 ]
+               },
+               {
+                 "name": "stack_trace",
+                 "version": "1.12.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "path"
+                 ],
+                 "directDependencies": [
+                   "path"
+                 ]
+               },
+               {
+                 "name": "boolean_selector",
+                 "version": "2.1.2",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "source_span",
+                   "string_scanner"
+                 ],
+                 "directDependencies": [
+                   "source_span",
+                   "string_scanner"
+                 ]
+               },
+               {
+                 "name": "leak_tracker",
+                 "version": "10.0.9",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "clock",
+                   "collection",
+                   "meta",
+                   "path",
+                   "vm_service"
+                 ],
+                 "directDependencies": [
+                   "clock",
+                   "collection",
+                   "meta",
+                   "path",
+                   "vm_service"
+                 ]
+               },
+               {
+                 "name": "clock",
+                 "version": "1.1.2",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "characters",
+                 "version": "1.4.0",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "leak_tracker_flutter_testing",
+                 "version": "3.0.9",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "flutter",
+                   "leak_tracker",
+                   "leak_tracker_testing",
+                   "matcher",
+                   "meta"
+                 ],
+                 "directDependencies": [
+                   "flutter",
+                   "leak_tracker",
+                   "leak_tracker_testing",
+                   "matcher",
+                   "meta"
+                 ]
+               },
+               {
+                 "name": "flutter",
+                 "version": "0.0.0",
+                 "kind": "direct",
+                 "source": "sdk",
+                 "dependencies": [
+                   "characters",
+                   "collection",
+                   "material_color_utilities",
+                   "meta",
+                   "vector_math",
+                   "sky_engine"
+                 ],
+                 "directDependencies": [
+                   "characters",
+                   "collection",
+                   "material_color_utilities",
+                   "meta",
+                   "vector_math",
+                   "sky_engine"
+                 ]
+               },
+               {
+                 "name": "sky_engine",
+                 "version": "0.0.0",
+                 "kind": "transitive",
+                 "source": "sdk",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "vector_math",
+                 "version": "2.1.4",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "fake_async",
+                 "version": "1.3.3",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "clock",
+                   "collection"
+                 ],
+                 "directDependencies": [
+                   "clock",
+                   "collection"
+                 ]
+               },
+               {
+                 "name": "cupertino_icons",
+                 "version": "1.0.8",
+                 "kind": "direct",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "emma_flutter_sdk",
+                 "version": "1.6.2",
+                 "kind": "direct",
+                 "source": "hosted",
+                 "dependencies": [
+                   "flutter"
+                 ],
+                 "directDependencies": [
+                   "flutter"
+                 ]
+               }
+             ],
+             "sdks": [
+               {
+                 "name": "Dart",
+                 "version": "3.8.1"
+               },
+               {
+                 "name": "Flutter",
+                 "version": "3.32.6"
+               }
+             ],
+             "executables": []
+           }
+[  +15 ms] Found plugin emma_flutter_sdk at /Users/celia.perez/.pub-cache/hosted/pub.dev/emma_flutter_sdk-1.6.2/
+[  +23 ms] executing: [/Users/celia.perez/Documents/Flutter/flutter_projects/emma-flutter-example/emma_flutter_example/] /Users/celia.perez/Documents/Flutter/flutter/bin/cache/dart-sdk/bin/dart pub --suppress-analytics deps --json
+[ +133 ms] {
+             "root": "emma_flutter_example",
+             "packages": [
+               {
+                 "name": "emma_flutter_example",
+                 "version": "1.0.0+1",
+                 "kind": "root",
+                 "source": "root",
+                 "dependencies": [
+                   "flutter",
+                   "emma_flutter_sdk",
+                   "cupertino_icons",
+                   "flutter_test",
+                   "flutter_lints"
+                 ],
+                 "directDependencies": [
+                   "flutter",
+                   "emma_flutter_sdk",
+                   "cupertino_icons"
+                 ],
+                 "devDependencies": [
+                   "flutter_test",
+                   "flutter_lints"
+                 ]
+               },
+               {
+                 "name": "flutter_lints",
+                 "version": "5.0.0",
+                 "kind": "dev",
+                 "source": "hosted",
+                 "dependencies": [
+                   "lints"
+                 ],
+                 "directDependencies": [
+                   "lints"
+                 ]
+               },
+               {
+                 "name": "lints",
+                 "version": "5.1.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "flutter_test",
+                 "version": "0.0.0",
+                 "kind": "dev",
+                 "source": "sdk",
+                 "dependencies": [
+                   "flutter",
+                   "test_api",
+                   "matcher",
+                   "path",
+                   "fake_async",
+                   "clock",
+                   "stack_trace",
+                   "vector_math",
+                   "leak_tracker_flutter_testing",
+                   "async",
+                   "boolean_selector",
+                   "characters",
+                   "collection",
+                   "leak_tracker",
+                   "leak_tracker_testing",
+                   "material_color_utilities",
+                   "meta",
+                   "source_span",
+                   "stream_channel",
+                   "string_scanner",
+                   "term_glyph",
+                   "vm_service"
+                 ],
+                 "directDependencies": [
+                   "flutter",
+                   "test_api",
+                   "matcher",
+                   "path",
+                   "fake_async",
+                   "clock",
+                   "stack_trace",
+                   "vector_math",
+                   "leak_tracker_flutter_testing",
+                   "async",
+                   "boolean_selector",
+                   "characters",
+                   "collection",
+                   "leak_tracker",
+                   "leak_tracker_testing",
+                   "material_color_utilities",
+                   "meta",
+                   "source_span",
+                   "stream_channel",
+                   "string_scanner",
+                   "term_glyph",
+                   "vm_service"
+                 ]
+               },
+               {
+                 "name": "vm_service",
+                 "version": "15.0.0",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "term_glyph",
+                 "version": "1.2.2",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "string_scanner",
+                 "version": "1.4.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "source_span"
+                 ],
+                 "directDependencies": [
+                   "source_span"
+                 ]
+               },
+               {
+                 "name": "source_span",
+                 "version": "1.10.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "collection",
+                   "path",
+                   "term_glyph"
+                 ],
+                 "directDependencies": [
+                   "collection",
+                   "path",
+                   "term_glyph"
+                 ]
+               },
+               {
+                 "name": "path",
+                 "version": "1.9.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "collection",
+                 "version": "1.19.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "stream_channel",
+                 "version": "2.1.4",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "async"
+                 ],
+                 "directDependencies": [
+                   "async"
+                 ]
+               },
+               {
+                 "name": "async",
+                 "version": "2.13.0",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "collection",
+                   "meta"
+                 ],
+                 "directDependencies": [
+                   "collection",
+                   "meta"
+                 ]
+               },
+               {
+                 "name": "meta",
+                 "version": "1.16.0",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "material_color_utilities",
+                 "version": "0.11.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "collection"
+                 ],
+                 "directDependencies": [
+                   "collection"
+                 ]
+               },
+               {
+                 "name": "leak_tracker_testing",
+                 "version": "3.0.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "leak_tracker",
+                   "matcher",
+                   "meta"
+                 ],
+                 "directDependencies": [
+                   "leak_tracker",
+                   "matcher",
+                   "meta"
+                 ]
+               },
+               {
+                 "name": "matcher",
+                 "version": "0.12.17",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "async",
+                   "meta",
+                   "stack_trace",
+                   "term_glyph",
+                   "test_api"
+                 ],
+                 "directDependencies": [
+                   "async",
+                   "meta",
+                   "stack_trace",
+                   "term_glyph",
+                   "test_api"
+                 ]
+               },
+               {
+                 "name": "test_api",
+                 "version": "0.7.4",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "async",
+                   "boolean_selector",
+                   "collection",
+                   "meta",
+                   "source_span",
+                   "stack_trace",
+                   "stream_channel",
+                   "string_scanner",
+                   "term_glyph"
+                 ],
+                 "directDependencies": [
+                   "async",
+                   "boolean_selector",
+                   "collection",
+                   "meta",
+                   "source_span",
+                   "stack_trace",
+                   "stream_channel",
+                   "string_scanner",
+                   "term_glyph"
+                 ]
+               },
+               {
+                 "name": "stack_trace",
+                 "version": "1.12.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "path"
+                 ],
+                 "directDependencies": [
+                   "path"
+                 ]
+               },
+               {
+                 "name": "boolean_selector",
+                 "version": "2.1.2",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "source_span",
+                   "string_scanner"
+                 ],
+                 "directDependencies": [
+                   "source_span",
+                   "string_scanner"
+                 ]
+               },
+               {
+                 "name": "leak_tracker",
+                 "version": "10.0.9",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "clock",
+                   "collection",
+                   "meta",
+                   "path",
+                   "vm_service"
+                 ],
+                 "directDependencies": [
+                   "clock",
+                   "collection",
+                   "meta",
+                   "path",
+                   "vm_service"
+                 ]
+               },
+               {
+                 "name": "clock",
+                 "version": "1.1.2",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "characters",
+                 "version": "1.4.0",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "leak_tracker_flutter_testing",
+                 "version": "3.0.9",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "flutter",
+                   "leak_tracker",
+                   "leak_tracker_testing",
+                   "matcher",
+                   "meta"
+                 ],
+                 "directDependencies": [
+                   "flutter",
+                   "leak_tracker",
+                   "leak_tracker_testing",
+                   "matcher",
+                   "meta"
+                 ]
+               },
+               {
+                 "name": "flutter",
+                 "version": "0.0.0",
+                 "kind": "direct",
+                 "source": "sdk",
+                 "dependencies": [
+                   "characters",
+                   "collection",
+                   "material_color_utilities",
+                   "meta",
+                   "vector_math",
+                   "sky_engine"
+                 ],
+                 "directDependencies": [
+                   "characters",
+                   "collection",
+                   "material_color_utilities",
+                   "meta",
+                   "vector_math",
+                   "sky_engine"
+                 ]
+               },
+               {
+                 "name": "sky_engine",
+                 "version": "0.0.0",
+                 "kind": "transitive",
+                 "source": "sdk",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "vector_math",
+                 "version": "2.1.4",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "fake_async",
+                 "version": "1.3.3",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "clock",
+                   "collection"
+                 ],
+                 "directDependencies": [
+                   "clock",
+                   "collection"
+                 ]
+               },
+               {
+                 "name": "cupertino_icons",
+                 "version": "1.0.8",
+                 "kind": "direct",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "emma_flutter_sdk",
+                 "version": "1.6.2",
+                 "kind": "direct",
+                 "source": "hosted",
+                 "dependencies": [
+                   "flutter"
+                 ],
+                 "directDependencies": [
+                   "flutter"
+                 ]
+               }
+             ],
+             "sdks": [
+               {
+                 "name": "Dart",
+                 "version": "3.8.1"
+               },
+               {
+                 "name": "Flutter",
+                 "version": "3.32.6"
+               }
+             ],
+             "executables": []
+           }
+[   +5 ms] Found plugin emma_flutter_sdk at /Users/celia.perez/.pub-cache/hosted/pub.dev/emma_flutter_sdk-1.6.2/
+[  +18 ms] executing: [/Users/celia.perez/Documents/Flutter/flutter_projects/emma-flutter-example/emma_flutter_example/] /Users/celia.perez/Documents/Flutter/flutter/bin/cache/dart-sdk/bin/dart pub --suppress-analytics deps --json
+[ +136 ms] {
+             "root": "emma_flutter_example",
+             "packages": [
+               {
+                 "name": "emma_flutter_example",
+                 "version": "1.0.0+1",
+                 "kind": "root",
+                 "source": "root",
+                 "dependencies": [
+                   "flutter",
+                   "emma_flutter_sdk",
+                   "cupertino_icons",
+                   "flutter_test",
+                   "flutter_lints"
+                 ],
+                 "directDependencies": [
+                   "flutter",
+                   "emma_flutter_sdk",
+                   "cupertino_icons"
+                 ],
+                 "devDependencies": [
+                   "flutter_test",
+                   "flutter_lints"
+                 ]
+               },
+               {
+                 "name": "flutter_lints",
+                 "version": "5.0.0",
+                 "kind": "dev",
+                 "source": "hosted",
+                 "dependencies": [
+                   "lints"
+                 ],
+                 "directDependencies": [
+                   "lints"
+                 ]
+               },
+               {
+                 "name": "lints",
+                 "version": "5.1.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "flutter_test",
+                 "version": "0.0.0",
+                 "kind": "dev",
+                 "source": "sdk",
+                 "dependencies": [
+                   "flutter",
+                   "test_api",
+                   "matcher",
+                   "path",
+                   "fake_async",
+                   "clock",
+                   "stack_trace",
+                   "vector_math",
+                   "leak_tracker_flutter_testing",
+                   "async",
+                   "boolean_selector",
+                   "characters",
+                   "collection",
+                   "leak_tracker",
+                   "leak_tracker_testing",
+                   "material_color_utilities",
+                   "meta",
+                   "source_span",
+                   "stream_channel",
+                   "string_scanner",
+                   "term_glyph",
+                   "vm_service"
+                 ],
+                 "directDependencies": [
+                   "flutter",
+                   "test_api",
+                   "matcher",
+                   "path",
+                   "fake_async",
+                   "clock",
+                   "stack_trace",
+                   "vector_math",
+                   "leak_tracker_flutter_testing",
+                   "async",
+                   "boolean_selector",
+                   "characters",
+                   "collection",
+                   "leak_tracker",
+                   "leak_tracker_testing",
+                   "material_color_utilities",
+                   "meta",
+                   "source_span",
+                   "stream_channel",
+                   "string_scanner",
+                   "term_glyph",
+                   "vm_service"
+                 ]
+               },
+               {
+                 "name": "vm_service",
+                 "version": "15.0.0",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "term_glyph",
+                 "version": "1.2.2",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "string_scanner",
+                 "version": "1.4.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "source_span"
+                 ],
+                 "directDependencies": [
+                   "source_span"
+                 ]
+               },
+               {
+                 "name": "source_span",
+                 "version": "1.10.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "collection",
+                   "path",
+                   "term_glyph"
+                 ],
+                 "directDependencies": [
+                   "collection",
+                   "path",
+                   "term_glyph"
+                 ]
+               },
+               {
+                 "name": "path",
+                 "version": "1.9.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "collection",
+                 "version": "1.19.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "stream_channel",
+                 "version": "2.1.4",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "async"
+                 ],
+                 "directDependencies": [
+                   "async"
+                 ]
+               },
+               {
+                 "name": "async",
+                 "version": "2.13.0",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "collection",
+                   "meta"
+                 ],
+                 "directDependencies": [
+                   "collection",
+                   "meta"
+                 ]
+               },
+               {
+                 "name": "meta",
+                 "version": "1.16.0",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "material_color_utilities",
+                 "version": "0.11.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "collection"
+                 ],
+                 "directDependencies": [
+                   "collection"
+                 ]
+               },
+               {
+                 "name": "leak_tracker_testing",
+                 "version": "3.0.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "leak_tracker",
+                   "matcher",
+                   "meta"
+                 ],
+                 "directDependencies": [
+                   "leak_tracker",
+                   "matcher",
+                   "meta"
+                 ]
+               },
+               {
+                 "name": "matcher",
+                 "version": "0.12.17",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "async",
+                   "meta",
+                   "stack_trace",
+                   "term_glyph",
+                   "test_api"
+                 ],
+                 "directDependencies": [
+                   "async",
+                   "meta",
+                   "stack_trace",
+                   "term_glyph",
+                   "test_api"
+                 ]
+               },
+               {
+                 "name": "test_api",
+                 "version": "0.7.4",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "async",
+                   "boolean_selector",
+                   "collection",
+                   "meta",
+                   "source_span",
+                   "stack_trace",
+                   "stream_channel",
+                   "string_scanner",
+                   "term_glyph"
+                 ],
+                 "directDependencies": [
+                   "async",
+                   "boolean_selector",
+                   "collection",
+                   "meta",
+                   "source_span",
+                   "stack_trace",
+                   "stream_channel",
+                   "string_scanner",
+                   "term_glyph"
+                 ]
+               },
+               {
+                 "name": "stack_trace",
+                 "version": "1.12.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "path"
+                 ],
+                 "directDependencies": [
+                   "path"
+                 ]
+               },
+               {
+                 "name": "boolean_selector",
+                 "version": "2.1.2",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "source_span",
+                   "string_scanner"
+                 ],
+                 "directDependencies": [
+                   "source_span",
+                   "string_scanner"
+                 ]
+               },
+               {
+                 "name": "leak_tracker",
+                 "version": "10.0.9",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "clock",
+                   "collection",
+                   "meta",
+                   "path",
+                   "vm_service"
+                 ],
+                 "directDependencies": [
+                   "clock",
+                   "collection",
+                   "meta",
+                   "path",
+                   "vm_service"
+                 ]
+               },
+               {
+                 "name": "clock",
+                 "version": "1.1.2",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "characters",
+                 "version": "1.4.0",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "leak_tracker_flutter_testing",
+                 "version": "3.0.9",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "flutter",
+                   "leak_tracker",
+                   "leak_tracker_testing",
+                   "matcher",
+                   "meta"
+                 ],
+                 "directDependencies": [
+                   "flutter",
+                   "leak_tracker",
+                   "leak_tracker_testing",
+                   "matcher",
+                   "meta"
+                 ]
+               },
+               {
+                 "name": "flutter",
+                 "version": "0.0.0",
+                 "kind": "direct",
+                 "source": "sdk",
+                 "dependencies": [
+                   "characters",
+                   "collection",
+                   "material_color_utilities",
+                   "meta",
+                   "vector_math",
+                   "sky_engine"
+                 ],
+                 "directDependencies": [
+                   "characters",
+                   "collection",
+                   "material_color_utilities",
+                   "meta",
+                   "vector_math",
+                   "sky_engine"
+                 ]
+               },
+               {
+                 "name": "sky_engine",
+                 "version": "0.0.0",
+                 "kind": "transitive",
+                 "source": "sdk",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "vector_math",
+                 "version": "2.1.4",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "fake_async",
+                 "version": "1.3.3",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "clock",
+                   "collection"
+                 ],
+                 "directDependencies": [
+                   "clock",
+                   "collection"
+                 ]
+               },
+               {
+                 "name": "cupertino_icons",
+                 "version": "1.0.8",
+                 "kind": "direct",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "emma_flutter_sdk",
+                 "version": "1.6.2",
+                 "kind": "direct",
+                 "source": "hosted",
+                 "dependencies": [
+                   "flutter"
+                 ],
+                 "directDependencies": [
+                   "flutter"
+                 ]
+               }
+             ],
+             "sdks": [
+               {
+                 "name": "Dart",
+                 "version": "3.8.1"
+               },
+               {
+                 "name": "Flutter",
+                 "version": "3.32.6"
+               }
+             ],
+             "executables": []
+           }
+[   +5 ms] Found plugin emma_flutter_sdk at /Users/celia.perez/.pub-cache/hosted/pub.dev/emma_flutter_sdk-1.6.2/
+[  +12 ms] Generating /Users/celia.perez/Documents/Flutter/flutter_projects/emma-flutter-example/emma_flutter_example/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+[  +15 ms] ro.hardware = ranchu
+[  +33 ms] Initializing file store
+[   +4 ms] Skipping target: gen_localizations
+[   +1 ms] gen_dart_plugin_registrant: Starting due to {InvalidatedReasonKind.inputChanged: The following inputs have updated contents: /Users/celia.perez/Documents/Flutter/flutter_projects/emma-flutter-example/emma_flutter_example/.dart_tool/package_config_subset}
+[   +2 ms] executing: [/Users/celia.perez/Documents/Flutter/flutter_projects/emma-flutter-example/emma_flutter_example/] /Users/celia.perez/Documents/Flutter/flutter/bin/cache/dart-sdk/bin/dart pub --suppress-analytics deps --json
+[ +132 ms] {
+             "root": "emma_flutter_example",
+             "packages": [
+               {
+                 "name": "emma_flutter_example",
+                 "version": "1.0.0+1",
+                 "kind": "root",
+                 "source": "root",
+                 "dependencies": [
+                   "flutter",
+                   "emma_flutter_sdk",
+                   "cupertino_icons",
+                   "flutter_test",
+                   "flutter_lints"
+                 ],
+                 "directDependencies": [
+                   "flutter",
+                   "emma_flutter_sdk",
+                   "cupertino_icons"
+                 ],
+                 "devDependencies": [
+                   "flutter_test",
+                   "flutter_lints"
+                 ]
+               },
+               {
+                 "name": "flutter_lints",
+                 "version": "5.0.0",
+                 "kind": "dev",
+                 "source": "hosted",
+                 "dependencies": [
+                   "lints"
+                 ],
+                 "directDependencies": [
+                   "lints"
+                 ]
+               },
+               {
+                 "name": "lints",
+                 "version": "5.1.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "flutter_test",
+                 "version": "0.0.0",
+                 "kind": "dev",
+                 "source": "sdk",
+                 "dependencies": [
+                   "flutter",
+                   "test_api",
+                   "matcher",
+                   "path",
+                   "fake_async",
+                   "clock",
+                   "stack_trace",
+                   "vector_math",
+                   "leak_tracker_flutter_testing",
+                   "async",
+                   "boolean_selector",
+                   "characters",
+                   "collection",
+                   "leak_tracker",
+                   "leak_tracker_testing",
+                   "material_color_utilities",
+                   "meta",
+                   "source_span",
+                   "stream_channel",
+                   "string_scanner",
+                   "term_glyph",
+                   "vm_service"
+                 ],
+                 "directDependencies": [
+                   "flutter",
+                   "test_api",
+                   "matcher",
+                   "path",
+                   "fake_async",
+                   "clock",
+                   "stack_trace",
+                   "vector_math",
+                   "leak_tracker_flutter_testing",
+                   "async",
+                   "boolean_selector",
+                   "characters",
+                   "collection",
+                   "leak_tracker",
+                   "leak_tracker_testing",
+                   "material_color_utilities",
+                   "meta",
+                   "source_span",
+                   "stream_channel",
+                   "string_scanner",
+                   "term_glyph",
+                   "vm_service"
+                 ]
+               },
+               {
+                 "name": "vm_service",
+                 "version": "15.0.0",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "term_glyph",
+                 "version": "1.2.2",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "string_scanner",
+                 "version": "1.4.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "source_span"
+                 ],
+                 "directDependencies": [
+                   "source_span"
+                 ]
+               },
+               {
+                 "name": "source_span",
+                 "version": "1.10.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "collection",
+                   "path",
+                   "term_glyph"
+                 ],
+                 "directDependencies": [
+                   "collection",
+                   "path",
+                   "term_glyph"
+                 ]
+               },
+               {
+                 "name": "path",
+                 "version": "1.9.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "collection",
+                 "version": "1.19.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "stream_channel",
+                 "version": "2.1.4",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "async"
+                 ],
+                 "directDependencies": [
+                   "async"
+                 ]
+               },
+               {
+                 "name": "async",
+                 "version": "2.13.0",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "collection",
+                   "meta"
+                 ],
+                 "directDependencies": [
+                   "collection",
+                   "meta"
+                 ]
+               },
+               {
+                 "name": "meta",
+                 "version": "1.16.0",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "material_color_utilities",
+                 "version": "0.11.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "collection"
+                 ],
+                 "directDependencies": [
+                   "collection"
+                 ]
+               },
+               {
+                 "name": "leak_tracker_testing",
+                 "version": "3.0.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "leak_tracker",
+                   "matcher",
+                   "meta"
+                 ],
+                 "directDependencies": [
+                   "leak_tracker",
+                   "matcher",
+                   "meta"
+                 ]
+               },
+               {
+                 "name": "matcher",
+                 "version": "0.12.17",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "async",
+                   "meta",
+                   "stack_trace",
+                   "term_glyph",
+                   "test_api"
+                 ],
+                 "directDependencies": [
+                   "async",
+                   "meta",
+                   "stack_trace",
+                   "term_glyph",
+                   "test_api"
+                 ]
+               },
+               {
+                 "name": "test_api",
+                 "version": "0.7.4",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "async",
+                   "boolean_selector",
+                   "collection",
+                   "meta",
+                   "source_span",
+                   "stack_trace",
+                   "stream_channel",
+                   "string_scanner",
+                   "term_glyph"
+                 ],
+                 "directDependencies": [
+                   "async",
+                   "boolean_selector",
+                   "collection",
+                   "meta",
+                   "source_span",
+                   "stack_trace",
+                   "stream_channel",
+                   "string_scanner",
+                   "term_glyph"
+                 ]
+               },
+               {
+                 "name": "stack_trace",
+                 "version": "1.12.1",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "path"
+                 ],
+                 "directDependencies": [
+                   "path"
+                 ]
+               },
+               {
+                 "name": "boolean_selector",
+                 "version": "2.1.2",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "source_span",
+                   "string_scanner"
+                 ],
+                 "directDependencies": [
+                   "source_span",
+                   "string_scanner"
+                 ]
+               },
+               {
+                 "name": "leak_tracker",
+                 "version": "10.0.9",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "clock",
+                   "collection",
+                   "meta",
+                   "path",
+                   "vm_service"
+                 ],
+                 "directDependencies": [
+                   "clock",
+                   "collection",
+                   "meta",
+                   "path",
+                   "vm_service"
+                 ]
+               },
+               {
+                 "name": "clock",
+                 "version": "1.1.2",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "characters",
+                 "version": "1.4.0",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "leak_tracker_flutter_testing",
+                 "version": "3.0.9",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "flutter",
+                   "leak_tracker",
+                   "leak_tracker_testing",
+                   "matcher",
+                   "meta"
+                 ],
+                 "directDependencies": [
+                   "flutter",
+                   "leak_tracker",
+                   "leak_tracker_testing",
+                   "matcher",
+                   "meta"
+                 ]
+               },
+               {
+                 "name": "flutter",
+                 "version": "0.0.0",
+                 "kind": "direct",
+                 "source": "sdk",
+                 "dependencies": [
+                   "characters",
+                   "collection",
+                   "material_color_utilities",
+                   "meta",
+                   "vector_math",
+                   "sky_engine"
+                 ],
+                 "directDependencies": [
+                   "characters",
+                   "collection",
+                   "material_color_utilities",
+                   "meta",
+                   "vector_math",
+                   "sky_engine"
+                 ]
+               },
+               {
+                 "name": "sky_engine",
+                 "version": "0.0.0",
+                 "kind": "transitive",
+                 "source": "sdk",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "vector_math",
+                 "version": "2.1.4",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "fake_async",
+                 "version": "1.3.3",
+                 "kind": "transitive",
+                 "source": "hosted",
+                 "dependencies": [
+                   "clock",
+                   "collection"
+                 ],
+                 "directDependencies": [
+                   "clock",
+                   "collection"
+                 ]
+               },
+               {
+                 "name": "cupertino_icons",
+                 "version": "1.0.8",
+                 "kind": "direct",
+                 "source": "hosted",
+                 "dependencies": [],
+                 "directDependencies": []
+               },
+               {
+                 "name": "emma_flutter_sdk",
+                 "version": "1.6.2",
+                 "kind": "direct",
+                 "source": "hosted",
+                 "dependencies": [
+                   "flutter"
+                 ],
+                 "directDependencies": [
+                   "flutter"
+                 ]
+               }
+             ],
+             "sdks": [
+               {
+                 "name": "Dart",
+                 "version": "3.8.1"
+               },
+               {
+                 "name": "Flutter",
+                 "version": "3.32.6"
+               }
+             ],
+             "executables": []
+           }
+[   +5 ms] Found plugin emma_flutter_sdk at /Users/celia.perez/.pub-cache/hosted/pub.dev/emma_flutter_sdk-1.6.2/
+[  +12 ms] gen_dart_plugin_registrant: Complete
+[   +1 ms] Skipping target: _composite
+[        ] complete
+[   +2 ms] Launching lib/main.dart on sdk gphone64 arm64 in debug mode...
+[   +2 ms] /Users/celia.perez/Documents/Flutter/flutter/bin/cache/dart-sdk/bin/dartaotruntime /Users/celia.perez/Documents/Flutter/flutter/bin/cache/dart-sdk/bin/snapshots/frontend_server_aot.dart.snapshot --sdk-root /Users/celia.perez/Documents/Flutter/flutter/bin/cache/artifacts/engine/common/flutter_patched_sdk/ --incremental --target=flutter --experimental-emit-debug-metadata -DFLUTTER_VERSION=3.32.6 -DFLUTTER_CHANNEL=stable -DFLUTTER_GIT_URL=https://github.com/flutter/flutter.git -DFLUTTER_FRAMEWORK_REVISION=077b4a4ce1 -DFLUTTER_ENGINE_REVISION=72f2b18bb0 -DFLUTTER_DART_VERSION=3.8.1 --output-dill /var/folders/sx/t8h2nxr127q6bx32dm4m2xtm0000gq/T/flutter_tools.NYo5qh/flutter_tool.EVc1c1/app.dill --packages /Users/celia.perez/Documents/Flutter/flutter_projects/emma-flutter-example/emma_flutter_example/.dart_tool/package_config.json -Ddart.vm.profile=false -Ddart.vm.product=false --enable-asserts --track-widget-creation --filesystem-scheme org-dartlang-root --initialize-from-dill build/5f26809536b1c6a3797b573eb72ac672.cache.dill.track.dill --verbosity=error --enable-experiment=alternative-invalidation-strategy
+[   +5 ms] executing: /Users/celia.perez/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell -x logcat -v time -t 1
+[   +5 ms] <- compile package:emma_flutter_example/main.dart
+[  +86 ms] --------- beginning of kernel
+           07-17 09:08:56.495 I/logd    (  210): logdr: UID=2000 GID=2000 PID=9545 n tail=1 logMask=99 pid=0 start=0ns deadline=0ns
+[   +6 ms] executing: /Users/celia.perez/Library/Android/sdk/platform-tools/adb version
+[  +18 ms] Android Debug Bridge version 1.0.41
+           Version 36.0.0-13206524
+           Installed as /Users/celia.perez/Library/Android/sdk/platform-tools/adb
+           Running on Darwin 24.5.0 (arm64)
+[   +1 ms] executing: /Users/celia.perez/Library/Android/sdk/platform-tools/adb start-server
+[  +18 ms] Building APK
+[  +72 ms] executing: /usr/bin/plutil -convert xml1 -o - /Applications/Android Studio.app/Contents/Info.plist
+[  +53 ms] Exit code 0 from: /usr/bin/plutil -convert xml1 -o - /Applications/Android Studio.app/Contents/Info.plist
+[        ] <?xml version="1.0" encoding="UTF-8"?>
+           <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+           <plist version="1.0">
+           <dict>
+           	<key>CFBundleDevelopmentRegion</key>
+           	<string>English</string>
+           	<key>CFBundleDocumentTypes</key>
+           	<array>
+           		<dict>
+           			<key>CFBundleTypeExtensions</key>
+           			<array>
+           				<string>ipr</string>
+           			</array>
+           			<key>CFBundleTypeIconFile</key>
+           			<string>studio.icns</string>
+           			<key>CFBundleTypeName</key>
+           			<string>Android Studio Project File</string>
+           			<key>CFBundleTypeRole</key>
+           			<string>Editor</string>
+           		</dict>
+           		<dict>
+           			<key>CFBundleTypeExtensions</key>
+           			<array>
+           				<string>*</string>
+           			</array>
+           			<key>CFBundleTypeName</key>
+           			<string>All documents</string>
+           			<key>CFBundleTypeOSTypes</key>
+           			<array>
+           				<string>****</string>
+           			</array>
+           			<key>CFBundleTypeRole</key>
+           			<string>Editor</string>
+           			<key>LSTypeIsPackage</key>
+           			<false/>
+           		</dict>
+           	</array>
+           	<key>CFBundleExecutable</key>
+           	<string>studio</string>
+           	<key>CFBundleGetInfoString</key>
+           	<string>Android Studio 2025.1, build AI-251.25410.109.2511.13752376. Copyright JetBrains s.r.o., (c) 2000-2025</string>
+           	<key>CFBundleIconFile</key>
+           	<string>studio.icns</string>
+           	<key>CFBundleIdentifier</key>
+           	<string>com.google.android.studio</string>
+           	<key>CFBundleInfoDictionaryVersion</key>
+           	<string>6.0</string>
+           	<key>CFBundleName</key>
+           	<string>Android Studio</string>
+           	<key>CFBundlePackageType</key>
+           	<string>APPL</string>
+           	<key>CFBundleShortVersionString</key>
+           	<string>2025.1</string>
+           	<key>CFBundleURLTypes</key>
+           	<array>
+           		<dict>
+           			<key>CFBundleTypeRole</key>
+           			<string>Editor</string>
+           			<key>CFBundleURLName</key>
+           			<string>Stacktrace</string>
+           			<key>CFBundleURLSchemes</key>
+           			<array>
+           				<string>idea</string>
+           			</array>
+           		</dict>
+           	</array>
+           	<key>CFBundleVersion</key>
+           	<string>AI-251.25410.109.2511.13752376</string>
+           	<key>LSApplicationCategoryType</key>
+           	<string>public.app-category.developer-tools</string>
+           	<key>LSArchitecturePriority</key>
+           	<array>
+           		<string>arm64</string>
+           	</array>
+           	<key>LSMinimumSystemVersion</key>
+           	<string>10.13</string>
+           	<key>LSRequiresNativeExecution</key>
+           	<string>YES</string>
+           	<key>NSAppleEventsUsageDescription</key>
+           	<string>An application in Android Studio requests the ability to send Apple events.</string>
+           	<key>NSBluetoothAlwaysUsageDescription</key>
+           	<string>An application in Android Studio requests access to Bluetooth.</string>
+           	<key>NSCameraUsageDescription</key>
+           	<string>An application in Android Studio requests access to the device's camera.</string>
+           	<key>NSDesktopFolderUsageDescription</key>
+           	<string>An application in Android Studio requests access to the user's Desktop folder.</string>
+           	<key>NSDocumentsFolderUsageDescription</key>
+           	<string>An application in Android Studio requests access to the user's Documents folder.</string>
+           	<key>NSDownloadsFolderUsageDescription</key>
+           	<string>An application in Android Studio requests access to the user's Downloads folder.</string>
+           	<key>NSHighResolutionCapable</key>
+           	<true/>
+           	<key>NSLocalNetworkUsageDescription</key>
+           	<string>Android Studio's features, such as SSH and database connectivity, require permissions for accessing the local network and sending broadcast requests.</string>
+           	<key>NSLocationUsageDescription</key>
+           	<string>An application in Android Studio requests access to the user's location information.</string>
+           	<key>NSMicrophoneUsageDescription</key>
+           	<string>An application in Android Studio requests access to the device's microphone.</string>
+           	<key>NSNetworkVolumesUsageDescription</key>
+           	<string>An application in Android Studio requests access to files on a network volume.</string>
+           	<key>NSRemovableVolumesUsageDescription</key>
+           	<string>An application in Android Studio requests access to files on a removable volume.</string>
+           	<key>NSSupportsAutomaticGraphicsSwitching</key>
+           	<true/>
+           </dict>
+           </plist>
+[   +5 ms] executing: /Applications/Android Studio.app/Contents/jbr/Contents/Home/bin/java -version
+[  +66 ms] Exit code 0 from: /Applications/Android Studio.app/Contents/jbr/Contents/Home/bin/java -version
+[        ] openjdk version "21.0.6" 2025-01-21
+           OpenJDK Runtime Environment (build 21.0.6+-13391695-b895.109)
+           OpenJDK 64-Bit Server VM (build 21.0.6+-13391695-b895.109, mixed mode)
+[   +6 ms] Top-level Gradle build file not found, skipping migration of task "clean".
+[   +1 ms] executing: /Applications/Android Studio.app/Contents/jbr/Contents/Home/bin/java --version
+[  +66 ms] Exit code 0 from: /Applications/Android Studio.app/Contents/jbr/Contents/Home/bin/java --version
+[        ] openjdk 21.0.6 2025-01-21
+           OpenJDK Runtime Environment (build 21.0.6+-13391695-b895.109)
+           OpenJDK 64-Bit Server VM (build 21.0.6+-13391695-b895.109, mixed mode)
+[   +1 ms] Version of Java is different than impacted version, no migration attempted.
+[   +5 ms] CMake project not found, skipping support Android 15 16k page size migration.
+[   +2 ms] Using gradle from /Users/celia.perez/Documents/Flutter/flutter_projects/emma-flutter-example/emma_flutter_example/android/gradlew.
+[  +20 ms] Running Gradle task 'assembleDebug'...
+[        ] executing: [/Users/celia.perez/Documents/Flutter/flutter_projects/emma-flutter-example/emma_flutter_example/android/] /Users/celia.perez/Documents/Flutter/flutter_projects/emma-flutter-example/emma_flutter_example/android/gradlew --full-stacktrace --info -Pverbose=true -Ptarget-platform=android-arm64 -Ptarget=/Users/celia.perez/Documents/Flutter/flutter_projects/emma-flutter-example/emma_flutter_example/lib/main.dart -Pbase-application-name=android.app.Application -Pdart-defines=RkxVVFRFUl9WRVJTSU9OPTMuMzIuNg==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049MDc3YjRhNGNlMQ==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049NzJmMmIxOGJiMA==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My44LjE= -Pdart-obfuscation=false -Ptrack-widget-creation=true -Ptree-shake-icons=false -Pfilesystem-scheme=org-dartlang-root assembleDebug
+[ +438 ms] Initialized native services in: /Users/celia.perez/.gradle/native
+[        ] Initialized jansi services in: /Users/celia.perez/.gradle/native
+[ +216 ms] The client will now receive all logging from the daemon (pid: 3278). The daemon log file: /Users/celia.perez/.gradle/daemon/8.12/daemon-3278.out.log
+[        ] Starting 11th build in daemon [uptime: 47 mins 33.908 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 8 GiB, non-heap usage: 6% of 4 GiB]
+[        ] Using 8 worker leases.
+[  +97 ms] Now considering [/Users/celia.perez/Documents/Flutter/flutter_projects/emma-flutter-example/emma_flutter_example/android, /Users/celia.perez/Documents/Flutter/flutter/packages/flutter_tools/gradle] as hierarchies to watch
+[        ] Watching the file system is configured to be enabled if available
+[        ] File system watching is active
+[        ] Starting Build
+[        ] Now considering [/Users/celia.perez/Documents/Flutter/flutter/packages/flutter_tools/gradle, /Users/celia.perez/Documents/Flutter/flutter_projects/emma-flutter-example/emma_flutter_example/android] as hierarchies to watch
+[  +99 ms] > Configure project :gradle
+[        ] Evaluating project ':gradle' using build file '/Users/celia.perez/Documents/Flutter/flutter/packages/flutter_tools/gradle/build.gradle.kts'.
+[        ] Resolved plugin [id: 'org.gradle.java-gradle-plugin']
+[        ] Resolved plugin [id: 'org.gradle.groovy']
+[        ] Resolved plugin [id: 'org.gradle.kotlin.kotlin-dsl', version: '5.1.2']
+[        ] Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '1.9.20']
+[        ] Using Kotlin Gradle Plugin gradle85 variant
+[        ] kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+[        ] kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+[        ] file or directory '/Users/celia.perez/Documents/Flutter/flutter/packages/flutter_tools/gradle/src/main/java', not found
+[        ] Resolved plugin [id: 'dev.flutter.flutter-plugin-loader', version: '1.0.0']
+[        ] Resolved plugin [id: 'com.android.application', version: '8.7.3', apply: false]
+[        ] Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.1.0', apply: false]
+[        ] Resolve mutations for :gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#1334,Execution worker,5,main]) started.
+[        ] :gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#1338,Execution worker Thread 5,5,main]) started.
+[        ] > Task :gradle:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[        ] Skipping task ':gradle:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+[        ] Resolve mutations for :gradle:compileKotlin (Thread[#1338,Execution worker Thread 5,5,main]) started.
+[        ] :gradle:compileKotlin (Thread[#1333,included builds,5,main]) started.
+[  +92 ms] > Task :gradle:compileKotlin UP-TO-DATE
+[        ] Caching disabled for task ':gradle:compileKotlin' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':gradle:compileKotlin' as it is up-to-date.
+[        ] Resolve mutations for :gradle:compileJava (Thread[#1333,included builds,5,main]) started.
+[        ] :gradle:compileJava (Thread[#1333,included builds,5,main]) started.
+[        ] > Task :gradle:compileJava NO-SOURCE
+[        ] Skipping task ':gradle:compileJava' as it has no source files and no previous output files.
+[        ] Resolve mutations for :gradle:compileGroovy (Thread[#1333,included builds,5,main]) started.
+[        ] :gradle:compileGroovy (Thread[#1333,included builds,5,main]) started.
+[        ] > Task :gradle:compileGroovy NO-SOURCE
+[        ] Skipping task ':gradle:compileGroovy' as it has no source files and no previous output files.
+[        ] Resolve mutations for :gradle:pluginDescriptors (Thread[#1333,included builds,5,main]) started.
+[        ] :gradle:pluginDescriptors (Thread[#1333,included builds,5,main]) started.
+[        ] > Task :gradle:pluginDescriptors UP-TO-DATE
+[        ] Caching disabled for task ':gradle:pluginDescriptors' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Skipping task ':gradle:pluginDescriptors' as it is up-to-date.
+[        ] Resolve mutations for :gradle:processResources (Thread[#1333,included builds,5,main]) started.
+[        ] :gradle:processResources (Thread[#1333,included builds,5,main]) started.
+[        ] > Task :gradle:processResources UP-TO-DATE
+[        ] Caching disabled for task ':gradle:processResources' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Skipping task ':gradle:processResources' as it is up-to-date.
+[        ] Resolve mutations for :gradle:classes (Thread[#1333,included builds,5,main]) started.
+[        ] :gradle:classes (Thread[#1337,Execution worker Thread 4,5,main]) started.
+[        ] > Task :gradle:classes UP-TO-DATE
+[        ] Skipping task ':gradle:classes' as it has no actions.
+[        ] Resolve mutations for :gradle:jar (Thread[#1337,Execution worker Thread 4,5,main]) started.
+[        ] :gradle:jar (Thread[#1337,Execution worker Thread 4,5,main]) started.
+[        ] > Task :gradle:jar UP-TO-DATE
+[        ] Caching disabled for task ':gradle:jar' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Skipping task ':gradle:jar' as it is up-to-date.
+[        ] Settings evaluated using settings file '/Users/celia.perez/Documents/Flutter/flutter_projects/emma-flutter-example/emma_flutter_example/android/settings.gradle.kts'.
+[  +98 ms] Projects loaded. Root project using build file '/Users/celia.perez/Documents/Flutter/flutter_projects/emma-flutter-example/emma_flutter_example/android/build.gradle.kts'.
+[        ] Included projects: [root project 'android', project ':app', project ':emma_flutter_sdk']
+[ +512 ms] [
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone17,3",
+               "identifier" : "50C2A670-D582-4E17-B18B-05BEF236D3A6",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.iphone-16-1",
+               "modelName" : "iPhone 16",
+               "name" : "iPhone 16",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone17,2",
+               "identifier" : "EC43A201-0799-455D-9148-0127A3ED0999",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.iphone-16-pro-max-1",
+               "modelName" : "iPhone 16 Pro Max",
+               "name" : "iPhone 16 Pro Max",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad16,4",
+               "identifier" : "5BBD0177-1496-4B9D-846C-F3B3D09A5ACD",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.ipad-pro-m4-1",
+               "modelName" : "iPad Pro 11-inch (M4)",
+               "name" : "iPad Pro 11-inch (M4)",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad16,6",
+               "identifier" : "2524D25C-D0E1-422B-B2C6-918BFA3BAC9A",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.ipad-pro-m4-13-1",
+               "modelName" : "iPad Pro 13-inch (M4)",
+               "name" : "iPad Pro 13-inch (M4)",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad15,7",
+               "identifier" : "76344EF6-D901-446B-BA3F-9E0EB3F41E70",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.ipad-a16-1",
+               "modelName" : "iPad (A16)",
+               "name" : "iPad (A16)",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone17,5",
+               "identifier" : "B69BECDF-A4D0-4C68-A74C-6DE0EA407699",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.iphone-16-e-1",
+               "modelName" : "iPhone 16e",
+               "name" : "iPhone 16e",
+               "ignored" : false
+             },
+             {
+               "ignored" : false,
+               "modelCode" : "MacBookAir10,1",
+               "simulator" : false,
+               "modelName" : "MacBook Air",
+               "operatingSystemVersion" : "15.5 (24F74)",
+               "identifier" : "00008103-0014615410C0291E",
+               "platform" : "com.apple.platform.macosx",
+               "architecture" : "arm64e",
+               "interface" : "usb",
+               "available" : true,
+               "name" : "My Mac",
+               "modelUTI" : "com.apple.macbookair-late-2020"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone17,4",
+               "identifier" : "5A2EB93B-543E-43CE-A0FD-E4C531583D44",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.iphone-16-plus-1",
+               "modelName" : "iPhone 16 Plus",
+               "name" : "iPhone 16 Plus",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad15,5",
+               "identifier" : "5B4996ED-A7A4-48EC-9338-474647DD48C4",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.ipad-air-m3-13-1",
+               "modelName" : "iPad Air 13-inch (M3)",
+               "name" : "iPad Air 13-inch (M3)",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad16,2",
+               "identifier" : "A2F5940B-5DAF-432A-94A7-39DC065C152F",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.ipad-mini-a17-1",
+               "modelName" : "iPad mini (A17 Pro)",
+               "name" : "iPad mini (A17 Pro)",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone17,1",
+               "identifier" : "FED69ADD-B73E-4119-8F6A-9D71200C8F17",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.iphone-16-pro-1",
+               "modelName" : "iPhone 16 Pro",
+               "name" : "iPhone 16 Pro",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "18.5 (22F77)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad15,3",
+               "identifier" : "7E411D2A-5AE3-4381-9440-BE90339DEF1C",
+               "architecture" : "arm64",
+               "modelUTI" : "com.apple.ipad-air-m3-1",
+               "modelName" : "iPad Air 11-inch (M3)",
+               "name" : "iPad Air 11-inch (M3)",
+               "ignored" : false
+             }
+           ]
+[   +1 ms] executing: /usr/bin/arch -arm64e xcrun devicectl list devices --timeout 5 --json-output /var/folders/sx/t8h2nxr127q6bx32dm4m2xtm0000gq/T/flutter_tools.NYo5qh/core_devices.vtw90v/core_device_list.json
+[  +87 ms] > Configure project :
+[        ] Evaluating root project 'android' using build file '/Users/celia.perez/Documents/Flutter/flutter_projects/emma-flutter-example/emma_flutter_example/android/build.gradle.kts'.
+[        ] Caching disabled for Kotlin DSL script compilation (Project/TopLevel/stage2) because:
+[        ]   Build cache is disabled
+[        ] w: file:///Users/celia.perez/Documents/Flutter/flutter_projects/emma-flutter-example/emma_flutter_example/android/build.gradle.kts:11:9: 'kotlinOptions(KotlinJvmOptionsDeprecated /* = KotlinJvmOptions */.() -> Unit): Unit' is deprecated. Please migrate to the compilerOptions DSL. More details are here: https://kotl.in/u1r8ln
+[        ] w: file:///Users/celia.perez/Documents/Flutter/flutter_projects/emma-flutter-example/emma_flutter_example/android/build.gradle.kts:44:5: 'kotlinOptions(KotlinJvmOptionsDeprecated /* = KotlinJvmOptions */.() -> Unit): Unit' is deprecated. Please migrate to the compilerOptions DSL. More details are here: https://kotl.in/u1r8ln
+[   +1 ms] 4 actionable tasks: 4 up-to-date
+[        ] Watched directory hierarchies: [/Users/celia.perez/Documents/Flutter/flutter/packages/flutter_tools/gradle, /Users/celia.perez/Documents/Flutter/flutter_projects/emma-flutter-example/emma_flutter_example/android]
+[        ] No devices found.
+[        ] {
+             "info" : {
+               "arguments" : [
+                 "devicectl",
+                 "list",
+                 "devices",
+                 "--timeout",
+                 "5",
+                 "--json-output",
+                 "/var/folders/sx/t8h2nxr127q6bx32dm4m2xtm0000gq/T/flutter_tools.NYo5qh/core_devices.vtw90v/core_device_list.json"
+               ],
+               "commandType" : "devicectl.list.devices",
+               "environment" : {
+                 "TERM" : "xterm-256color"
+               },
+               "jsonVersion" : 2,
+               "outcome" : "success",
+               "version" : "443.24"
+             },
+             "result" : {
+               "devices" : [
+
+               ]
+             }
+           }
+
+[  +25 ms] Running Gradle task 'assembleDebug'... (completed in 1.727ms)
+[   +1 ms] "flutter run" took 7.587ms.
+[   +3 ms] executing: sw_vers -productName
+[  +13 ms] Exit code 0 from: sw_vers -productName
+[        ] macOS
+[        ] executing: sw_vers -productVersion
+[  +11 ms] Exit code 0 from: sw_vers -productVersion
+[        ] 15.5
+[        ] executing: sw_vers -buildVersion
+[  +13 ms] Exit code 0 from: sw_vers -buildVersion
+[        ] 24F74
+[        ] executing: uname -m
+[   +7 ms] Exit code 0 from: uname -m
+[        ] arm64
+[        ] Running 3 shutdown hooks
+[   +6 ms] Shutdown hooks complete
+[ +114 ms] exiting with code 1
