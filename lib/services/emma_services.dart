@@ -34,8 +34,8 @@ class EmmaServices {
       print('Notifications permission status: ' + status.toString());
     });
 
- await EmmaFlutterSdk.shared.requestNotificationsPermission();
-}
+    await EmmaFlutterSdk.shared.requestNotificationsPermission();
+    }
 
   }
 

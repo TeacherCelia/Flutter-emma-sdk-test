@@ -2,7 +2,14 @@
 
 Este proyecto es una **app de pruebas** que estoy utilizando para **implementar y comprobar la integración del SDK de EMMA en Flutter**, framework para desarrollar apps híbridas. En este caso, **Android** e **iOS**. 
 
-No es una app final ni tiene una estructura cerrada, ya que la estoy usando para ir probando distintas funcionalidades.
+---
+
+Capturas de pantalla:
+
+![Mockup de la app: ads](git_images/mockup_emma_flutter1.png)
+
+![Mockup de la app: otras funciones](git_images/mockup_emma_flutter2.png)
+
 
 ## 📄 Documentación complementaria
 
